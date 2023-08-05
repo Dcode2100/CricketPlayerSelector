@@ -4,7 +4,9 @@ export const Container = styled.div`
   width: 100%;
   background-color: light;
   display: flex;
-
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
   /* padding: 0px 20px 0px 20px; */
 `;
 
@@ -16,6 +18,11 @@ export const ContainerChild = styled.div`
   justify-content: center;
   padding: 1rem;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 0 auto;
+  }
 `;
 
 export const Header = styled.div`
